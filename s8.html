@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bash Scripting Learn Shell Scripting Zero to Mastery</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+<style>
+            .video-container {
+                width: 100%;
+                max-width: 800px;
+                margin: 20px auto;
+            }
+            .drive-iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+</head>
+<body>
+<header>
+<nav class="wrapper">
+<i class="fa-solid fa-angle-left arrow" id="left"></i>
+<ul class="carousel">
+<!-- Navigation items will be inserted here -->
+<li class="card"><a href="index.html">1. Introduction</a></li>
+<li class="card"><a href="s2.html">2. Section 01 Intro to Bash Shell Scripting</a></li>
+<li class="card"><a href="s3.html">3. Section 02 Variables</a></li>
+<li class="card"><a href="s4.html">4. Section 03 Shell Expansions</a></li>
+<li class="card"><a href="s5.html">5. Section 04 Shell Operation in Depth</a></li>
+<li class="card"><a href="s6.html">6. Section 05 Program Flow in Bash</a></li>
+<li class="card"><a href="s7.html">7. Section 06 Loops in Bash</a></li>
+<li class="card" id="actuel"><a href="s8.html">8. Section 07 Functions in Bash</a></li>
+<li class="card"><a href="s9.html">10. Appendix Linux Installation Guide</a></li>
+<li class="card"><a href="s10.html">11. Appendix Using the VIM Editor</a></li>
+<li class="card"><a href="s11.html">12. Appendix Cron Anacron and Automation</a></li>
+<li class="card"><a href="s12.html">13. Appendix Netfilter and Iptables Firewall</a></li></ul>
+<i class="fa-solid fa-angle-right arrow" id="right"></i>
+</nav>
+</header>
+<!-- Navigation buttons -->
+<button class="arrow-button" id="left-arrow" onclick="navigate('s7.html')">←</button>
+<button class="arrow-button" id="right-arrow" onclick="navigate('s9.html')">→</button>
+<main>
+<!-- Video sections will be inserted here -->
+
+<section class="section" id="section60">
+<h2 class="video-title">60. Intro to Bash Functions</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1m-KWiU6pEUWu8ljrLLww58Q4w39NqTw0/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 0)">Previous Video</button>
+<button onclick="navigateToSection('next', 0)">Next Video</button>
+<textarea class="notes-input" id="notes60" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section61">
+<h2 class="video-title">61. Functions Arguments</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1lwxG75MW7IvAerA3GHVJm9IXuraiOB7B/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 1)">Previous Video</button>
+<button onclick="navigateToSection('next', 1)">Next Video</button>
+<textarea class="notes-input" id="notes61" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section62">
+<h2 class="video-title">62. Variable Scopes in Functions</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1m-ofRYwFQqfG0tCkjrT1NY2mjM13lOFB/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 2)">Previous Video</button>
+<button onclick="navigateToSection('next', 2)">Next Video</button>
+<textarea class="notes-input" id="notes62" placeholder="Write your notes here..."></textarea>
+</section>
+</main>
+<!-- Footer elements -->
+<div class="footer-buttons">
+<button id="backToTop" style="display: none;">
+<i class="fas fa-arrow-up"></i>
+</button>
+<button id="exportButton">
+<i class="fa-solid fa-download"></i>
+</button>
+<input accept=".json" id="importButton" type="file"/>
+<button id="importDataButton">
+<i class="fa-solid fa-upload"></i>
+</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

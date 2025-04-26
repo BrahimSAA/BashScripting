@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bash Scripting Learn Shell Scripting Zero to Mastery</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+<style>
+            .video-container {
+                width: 100%;
+                max-width: 800px;
+                margin: 20px auto;
+            }
+            .drive-iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+</head>
+<body>
+<header>
+<nav class="wrapper">
+<i class="fa-solid fa-angle-left arrow" id="left"></i>
+<ul class="carousel">
+<!-- Navigation items will be inserted here -->
+<li class="card"><a href="index.html">1. Introduction</a></li>
+<li class="card"><a href="s2.html">2. Section 01 Intro to Bash Shell Scripting</a></li>
+<li class="card"><a href="s3.html">3. Section 02 Variables</a></li>
+<li class="card"><a href="s4.html">4. Section 03 Shell Expansions</a></li>
+<li class="card" id="actuel"><a href="s5.html">5. Section 04 Shell Operation in Depth</a></li>
+<li class="card"><a href="s6.html">6. Section 05 Program Flow in Bash</a></li>
+<li class="card"><a href="s7.html">7. Section 06 Loops in Bash</a></li>
+<li class="card"><a href="s8.html">8. Section 07 Functions in Bash</a></li>
+<li class="card"><a href="s9.html">10. Appendix Linux Installation Guide</a></li>
+<li class="card"><a href="s10.html">11. Appendix Using the VIM Editor</a></li>
+<li class="card"><a href="s11.html">12. Appendix Cron Anacron and Automation</a></li>
+<li class="card"><a href="s12.html">13. Appendix Netfilter and Iptables Firewall</a></li></ul>
+<i class="fa-solid fa-angle-right arrow" id="right"></i>
+</nav>
+</header>
+<!-- Navigation buttons -->
+<button class="arrow-button" id="left-arrow" onclick="navigate('s4.html')">←</button>
+<button class="arrow-button" id="right-arrow" onclick="navigate('s6.html')">→</button>
+<main>
+<!-- Video sections will be inserted here -->
+
+<section class="section" id="section28">
+<h2 class="video-title">28. Intro to Shell Operation</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1jBVYVmiDnVsC5LZg8jY0LyYKnS8pNAaP/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 0)">Previous Video</button>
+<button onclick="navigateToSection('next', 0)">Next Video</button>
+<textarea class="notes-input" id="notes28" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section29">
+<h2 class="video-title">29. Tokenization</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1j6mlDC07DfCoCjnk0vaxz8iwDBayCQy4/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 1)">Previous Video</button>
+<button onclick="navigateToSection('next', 1)">Next Video</button>
+<textarea class="notes-input" id="notes29" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section30">
+<h2 class="video-title">30. Command Identification</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1jGMcco1RZKvoJF08qAfCSZlSKEULo-U2/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 2)">Previous Video</button>
+<button onclick="navigateToSection('next', 2)">Next Video</button>
+<textarea class="notes-input" id="notes30" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section31">
+<h2 class="video-title">31. Shell Expansions</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1j5igV-4aHISu6aYVTQLFUl6DHat7CUIj/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 3)">Previous Video</button>
+<button onclick="navigateToSection('next', 3)">Next Video</button>
+<textarea class="notes-input" id="notes31" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section32">
+<h2 class="video-title">32. Quote Removal</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1jGZbzL3UYLBxRiXKat8KqJH-HRkZsdgw/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 4)">Previous Video</button>
+<button onclick="navigateToSection('next', 4)">Next Video</button>
+<textarea class="notes-input" id="notes32" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section33">
+<h2 class="video-title">33. Redirections Stdin and Stdout Redirections</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1jREVv54EjNRHU6CUTXg8WAR-viV0KfOG/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 5)">Previous Video</button>
+<button onclick="navigateToSection('next', 5)">Next Video</button>
+<textarea class="notes-input" id="notes33" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section34">
+<h2 class="video-title">34. Stderr Redirection</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1jS_J0Jot3n5f0xZjH8ehx5kRyZ-2dXpw/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 6)">Previous Video</button>
+<button onclick="navigateToSection('next', 6)">Next Video</button>
+<textarea class="notes-input" id="notes34" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section35">
+<h2 class="video-title">35. Full Recap Handson Example</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1jX7Jh_ysrBEuh0LfiUYuxro5aR4UDJJE/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 7)">Previous Video</button>
+<button onclick="navigateToSection('next', 7)">Next Video</button>
+<textarea class="notes-input" id="notes35" placeholder="Write your notes here..."></textarea>
+</section>
+</main>
+<!-- Footer elements -->
+<div class="footer-buttons">
+<button id="backToTop" style="display: none;">
+<i class="fas fa-arrow-up"></i>
+</button>
+<button id="exportButton">
+<i class="fa-solid fa-download"></i>
+</button>
+<input accept=".json" id="importButton" type="file"/>
+<button id="importDataButton">
+<i class="fa-solid fa-upload"></i>
+</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
