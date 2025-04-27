@@ -106,28 +106,14 @@ header {
 
 #left {
   left: 5px;
+  display: flex;
 }
 
 #right {
   right: 5px;
+  display: flex;
 }
 
-/* Home Button */
-.home-button {
-  position: absolute;
-  right: 20px;
-  color: white;
-  font-size: 1.2rem;
-  background-color: #673ab7;
-  padding: 8px 12px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.home-button:hover {
-  background-color: #5e35b1;
-  transform: scale(1.05);
-}
 
 /* Main Content */
 main {
@@ -246,62 +232,6 @@ main {
   box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
 }
 
-/* Footer Buttons */
-.footer-buttons {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  gap: 10px;
-  z-index: 1000;
-}
-
-#backToTop,
-#exportButton,
-#importDataButton {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease;
-}
-
-#backToTop {
-  background-color: #007bff;
-  color: white;
-}
-
-#backToTop:hover {
-  background-color: #0056b3;
-}
-
-#exportButton {
-  background-color: #ff6500;
-  color: white;
-}
-
-#exportButton:hover {
-  background-color: #fc7f2b;
-}
-
-#importDataButton {
-  background-color: #4caf50;
-  color: white;
-}
-
-#importDataButton:hover {
-  background-color: #49d34e;
-}
-
-#importButton {
-  display: none;
-}
-
 /* Arrow Buttons */
 .arrow-button {
   position: fixed;
@@ -335,6 +265,87 @@ main {
   right: 10px;
 }
 
+/* Footer Buttons */
+.footer-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#backToTop,
+#exportButton,
+#importDataButton,
+.home-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+/* Circular buttons */
+#backToTop,
+#exportButton,
+#importDataButton {
+  border-radius: 50%;
+}
+
+/* Square home button with slight rounding */
+.home-button {
+  border-radius: 5px;
+  background-color: #673ab7;
+  color: white;
+}
+
+/* Button colors */
+#backToTop {
+  background-color: #007bff;
+  color: white;
+}
+
+#exportButton {
+  background-color: #ff6500;
+  color: white;
+}
+
+#importDataButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Hover effects */
+#backToTop:hover {
+  background-color: #0056b3;
+}
+
+#exportButton:hover {
+  background-color: #fc7f2b;
+}
+
+#importDataButton:hover {
+  background-color: #49d34e;
+}
+
+.home-button:hover {
+  background-color: #5e35b1;
+  transform: scale(1.1);
+}
+
+#importButton {
+  display: none;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   html {
@@ -363,11 +374,6 @@ main {
     font-size: 1.1rem;
   }
 
-  .home-button {
-    right: 10px;
-    padding: 6px 10px;
-  }
-
   .progress-navigate-container {
     flex-direction: column;
     gap: 0.8rem;
@@ -388,15 +394,21 @@ main {
 
   .footer-buttons {
     bottom: 15px;
-    right: 15px;
+    gap: 8px;
+    padding: 0 8px;
   }
 
   #backToTop,
   #exportButton,
-  #importDataButton {
+  #importDataButton,
+  .home-button {
     width: 36px;
     height: 36px;
     font-size: 0.9rem;
+  }
+
+  .home-button {
+    border-radius: 4px;
   }
 
   #left-arrow,
