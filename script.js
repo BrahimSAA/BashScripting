@@ -166,3 +166,23 @@ function updateSectionStyle(section, isComplete) {
     });
   }
 }
+
+// Section navigation - Fixed to show section at top of viewport
+function navigateToSection(direction, currentIndex) {
+  const sections = document.querySelectorAll('.section');
+  let targetIndex = direction === 'next' ? currentIndex + 1 : currentIndex - 1;
+
+  if (targetIndex >= 0 && targetIndex < sections.length) {
+      // Get the header height to account for sticky header
+      const headerHeight = document.querySelector('header').offsetHeight;
+      const elementPosition = sections[targetIndex].getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight - 20; // 20px extra padding
+
+      window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+      });
+  } else {
+      alert(direction === 'next' ? 'You are at the last video!' : 'You are at the first video!');
+  }
+}
